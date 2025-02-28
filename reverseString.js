@@ -1,13 +1,18 @@
 let string = "Ana ar putea avea cirese";
 
-let arr = string.split("");
-let reverse = "";
+let spl = string.split(""); // (24) ['A', 'n', 'a', ' ', 'a', 'r', ' ', 'p', 'u', 't', 'e', 'a', ' ', 'a', 'v', 'e', 'a', ' ', 'c', 'i', 'r', 'e', 's', 'e']
 
-// for (let i = 0; i < arr.length; i++) {
-//   reverse += arr[-1];
-// }
+// let len = spl.length;
+let text = "";
+for (let i = 0; i < spl.length; i--) {
+  text += spl[i - 1];
+}
 
-let rev = arr.reverse();
-let a = rev.split("a");
+// let rev = spl.reverse().toString();
+// let str= .toString()
 
-console.log(a);
+// let rule = /\,/g;
+
+// let mod = rev.replace(/\,/g, "");
+
+console.log(text);

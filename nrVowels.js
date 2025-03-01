@@ -1,3 +1,5 @@
+// Count the number of vowels in a given string.
+
 let f = "Ana ar putea avea peree"; //11
 
 let reg = /[aeiou]/gi;

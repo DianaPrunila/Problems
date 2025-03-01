@@ -1,6 +1,3 @@
-// function hello() {
-//   console.log("HeHe");
-// }
-// hello();
+// Print "Hello, World!" to the console.
 
 console.log("Hello World");

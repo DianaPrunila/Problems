@@ -2,7 +2,7 @@
 
 let x = "Ana ar putea avea mere";
 
-// let upper = x.toUpperCase();
+let upper = x.toUpperCase();
 
 let exp;
 

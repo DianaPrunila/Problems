@@ -2,15 +2,16 @@
 
 const fName = { a: "ana", b: "bianca", c: "cristina" };
 
-let n = null;
+let n = "";
 for (let i in fName) {
   n += i;
 }
 
-let s = n.slice(4);
-
-let spl = s.split("");
+let spl = n.split("");
 
 console.log(n);
-console.log(s);
 console.log(spl);
+
+// let y = Object.keys(fName);
+
+// console.log(y);

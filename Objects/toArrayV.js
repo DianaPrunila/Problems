@@ -2,12 +2,17 @@
 
 const fName = { a: "ana", b: "bianca", c: "cristina" };
 
-let n = null;
+let n = "";
 
-for (i of fName) {
-  n += i;
+for (let [letter, name] of Object.entries(fName)) {
+  n += name + ",";
 }
-
+let m = n.split(",");
+let o = m.slice(0, 3);
 console.log(n);
-console.log();
-console.log();
+console.log(m);
+console.log(o);
+
+// let x = Object.values(fName);
+
+// console.log(x);

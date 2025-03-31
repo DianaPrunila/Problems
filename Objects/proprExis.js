@@ -4,18 +4,23 @@ const fName = { a: "ana", b: "bianca", c: "cristina" };
 
 let target = "c";
 
-// for (let [key, value] of Object.entries(fName)) {
-//   if (key == target) {
-//     console.log("The property already exists");
-//   } else {
-//     console.log("The property dose not exist yet");
-//   }
-// }
 console.log("The keys are: " + Object.keys(fName));
 
+if (target in fName) {
+  console.log("Exists: " + target);
+} else {
+  console.log("Not exist " + target);
+}
+
+////
+let found = false;
 for (let i of Object.keys(fName)) {
-  if (i !== target) {
-    continue;
+  if (i == target) {
+    console.log("Exists: " + target);
+    found = true;
+    break; // Stop loop when found
   }
-  console.log("The property already exists: " + Object.keys(fName[i]));
+}
+if (!found) {
+  console.log("Not exist " + target);
 }

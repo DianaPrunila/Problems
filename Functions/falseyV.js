@@ -1,9 +1,7 @@
 // Write a function that removes falsy values from an array
 
 const falsey = [
-  "Ana",
   null,
-  "are",
   3,
   undefined,
   "Creveti",
@@ -12,20 +10,15 @@ const falsey = [
   550,
   NaN,
   "",
-  "ron",
   -0,
   0n,
 ];
 let toDelete = [null, undefined, false, NaN, "", -0, 0n];
-let toCancel = null;
-let index = falsey.filter(toCancel);
 
-function falseyNr() {
-  for (let i = 0; i <= falsey.length; i++) {
-    if (i === null) {
-      falsey.splice(i.i, 1);
-      return falsey;
-    }
-  }
+let filt = falsey.filter(falseyNr);
+
+function falseyNr(value) {
+  return !toDelete.includes(value);
 }
-console.log(falsey);
+
+console.log(filt);
